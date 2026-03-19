@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        div:hover{
+            color: blue;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            width: 400px;
+            color: yellow;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 10px black;
+            background-image: linear-gradient(to top,red ,black);
+            text-indent: 15px;
+            text-align: justify;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>H1 está fora da div</h1> 
+    <div>
+        Passe o mouse aqui...
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequuntur necessitatibus architecto odio fuga beatae illum esse laborum quae pariatur! Tenetur earum qui cupiditate, laborum consequuntur alias? Blanditiis, sunt nulla!</p>
+    </div>
+</body>
+</html>
