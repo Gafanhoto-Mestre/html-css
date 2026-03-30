@@ -1,2 +1,66 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /*Tamanho mde 100% da minha viewport (altura) o h é de height altura*/
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps; /*Todas as letras maiúsculas com a primeira maior que as outras*/
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none; /*tira o sublinhado*/
+    font-weight: bolder; /*deixa a letra grossa em negrito*/
+
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline; /*a palavra fica sublinhada quando passa o mouse*/
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.nornal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.247);
+    width: 400px;
+}
+
+footer{
+    background-color: black; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
