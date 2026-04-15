@@ -8,248 +8,156 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-
         table{
             width: 500px;
-            margin-bottom: 60px;
             border-collapse: collapse;
+        }
+        caption{
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot{
+            background-color: rgb(83, 83, 83);
+            color: white;
         }
 
         td, th{
+            padding: 5px;
             border: 1px solid black;
-            padding: 8px;
-        }
-
-        thead, tfoot{
-            /* background-image: linear-gradient(to bottom, transparent, rgba(3, 56, 87, 0.747) 70%); */
-            background-color: rgb(65, 65, 65);
-            color: white;
         }
 
         td.num{
             text-align: right;
         }
-
-        caption{
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 10px;
-            background-color: lightgray;
-            border-radius: 10px 10px 0px 0px;
-        }
-
     </style>
 </head>
 <body>
     <h1>Uso de tabelas Grandes</h1>
     <!-- 
-        ANATOMIA PARA TABELAS GRANDES
+        ANATOMIA DE TABELAS GRANDES
         TABLE
-        THEAD
-            TR, TD, TH        
-        TBODY
-            TR, TD, TH
-        TFOOT
-            TR, TD, TH
-    -->
+            CAPTION
+            THEAD
+                tr, td, th
+            TBODY
+                tr, td, th
+            TFOOT
+                tr, td, th
+        -->
     <table>
-        <caption>População das unidades Federativas</caption>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 120px;">População</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">49.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.564.655</td>
-            </tr>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">49.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.564.655</td>
-            </tr>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">49.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.564.655</td>
-            </tr>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">49.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.564.655</td>
-            </tr>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">49.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Maranhão</td>
-                <td class="num">17.564.655</td>
-            </tr>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">49.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.564.655</td>
-            </tr>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">49.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.564.655</td>
-            </tr>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">49.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.564.655</td>
-            </tr>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">49.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.564.655</td>
-            </tr>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">49.564.655</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">29.564.655</td>
-            </tr>
-            <tr>
-                <td>Curitiba</td>
-                <td class="num">19.564.655</td>
-            </tr>
-            <tr>
-                <td>Maranhão</td>
-                <td class="num">17.564.655</td>
-            </tr>
+           <tr>
+               <td>Acre</td>
+               <td class="num">164.122</td>
+           </tr>
+           <tr>
+               <td>Alagoas</td>
+               <td class="num">854.454</td>
+           </tr>
+           <tr>
+               <td>Amapá</td>
+               <td class="num">12.454.545</td>
+           </tr>
+           <tr>
+               <td>Amazonas</td>
+               <td class="num">332.65</td>
+           </tr>
+           <tr>
+               <td>Bahia</td>
+               <td class="num">654.324</td>
+           </tr>
+           <tr>
+               <td>Ceará</td>
+               <td class="num">23.657</td>
+           </tr>
+           <tr>
+               <td>Distrito Federal</td>
+               <td class="num">1.568.647</td>
+           </tr>
+           <tr>
+               <td>Espírito Santo</td>
+               <td class="num">21.654.664</td>
+           </tr>
+           <tr>
+               <td>Goiás</td>
+               <td class="num">56.897.234</td>
+           </tr>
+           <tr>
+               <td>Maranhão</td>
+               <td class="num">21.654</td>
+           </tr>
+           <tr>
+               <td>Mato Grosso</td>
+               <td class="num">654.232</td>
+           </tr>
+           <tr>
+               <td>Mato Grosso do Sul</td>
+               <td class="num">21.654.654</td>
+           </tr>
+           <tr>
+               <td>Minas Gerais</td>
+               <td class="num">65.621.654</td>
+           </tr>
+           <tr>
+               <td>Paraíba</td>
+               <td class="num">32.324</td>
+           </tr>
+           <tr>
+               <td>Paraná</td>
+               <td class="num">654.657</td>
+           </tr>
+           <tr>
+               <td>Pernambuco</td>
+               <td class="num">98.321</td>
+           </tr>
+           <tr>
+               <td>Piauí</td>
+               <td class="num">3.625</td>
+           </tr>
+           <tr>
+               <td>Rio de Janeiro</td>
+               <td class="num">500.654</td>
+           </tr>
+           <tr>
+               <td>Rio Grande do Norte</td>
+               <td class="num">32.654</td>
+           </tr>
+           <tr>
+               <td>Rio Grande do Sul</td>
+               <td class="num">324.654</td>
+           </tr>
+           <tr>
+               <td>Roraima</td>
+               <td class="num">23.654</td>
+           </tr>
+           <tr>
+               <td>Santa Catarina</td>
+               <td class="num">36.546</td>
+           </tr>
+           <tr>
+               <td>São Paulo</td>
+               <td class="num">45.654.324</td>
+           </tr>
+           <tr>
+               <td>Sergipe</td>
+               <td class="num">6.654</td>
+           </tr>
+           <tr>
+               <td>Tocantins</td>
+               <td class="num">10.654</td>
+           </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th scope="row">Total de habitantes</th>
-                <td class="num">90.695.241</td>
+                <th scope="row">Total de População</th>
+                <td class="num"><strong>235.654.325</strong></td>
             </tr>
         </tfoot>
     </table>
