@@ -21,11 +21,31 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        th{
+            background-color: lightgray;
+            font-style: italic;
+        }
+
+        .destaque{
+            background-color: bisque;
+        }
+
+        .idade{
+            background-color: aquamarine;
+        }
+
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
     <table>
+        <colgroup>
+            <col class="destaque">
+            <col class="destaque">
+            <col class="idade">
+            <col class="destaque ">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
