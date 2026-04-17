@@ -9,6 +9,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
+            position: relative;
             width: 500px;
             border-collapse: collapse;
         }
@@ -19,6 +20,17 @@
         thead, tfoot{
             background-color: rgb(83, 83, 83);
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
         }
 
         td, th{
@@ -45,14 +57,18 @@
                 tr, td, th
         -->
     <table>
-        <caption>População das Unidades Federativas</caption>
+        <caption><strong>População das Unidades Federativas</strong></caption>
+
+        <!-- CABEÇA DA TABELA -->
         <thead>
             <tr>
                 <th scope="col">Estado</th>
                 <th scope="col" style="width: 120px;">População</th>
             </tr>
         </thead>
-        <tbody>
+
+        <!-- CORPO DA TABELA -->
+        <tbody>   <!--  tabela onde vai ter o efeito zebrado    -->
            <tr>
                <td>Acre</td>
                <td class="num">164.122</td>
@@ -154,6 +170,8 @@
                <td class="num">10.654</td>
            </tr>
         </tbody>
+
+        <!-- RODA PÉ DA TABELA -->
         <tfoot>
             <tr>
                 <th scope="row">Total de População</th>
@@ -161,5 +179,11 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum voluptatum ipsa! Reprehenderit amet voluptatibus sapiente placeat veniam voluptates incidunt, magni quasi aut dolorum nihil quae atque recusandae, dicta odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, beatae dicta! Impedit repellendus laborum nulla, minus, ex voluptas iste recusandae dolore deserunt unde mollitia reiciendis magni itaque? Ullam, similique maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequuntur praesentium sit porro? Facere totam aperiam libero quas. Ducimus voluptatum nemo officia, in ea consequuntur esse impedit libero voluptatem dolorum. lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum voluptatum ipsa! Reprehenderit amet voluptatibus sapiente placeat veniam voluptates incidunt, magni quasi aut dolorum nihil quae atque recusandae, dicta odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, beatae dicta! Impedit repellendus laborum nulla, minus, ex voluptas iste recusandae dolore deserunt unde mollitia reiciendis magni itaque? Ullam, similique maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequuntur praesentium sit porro? Facere totam aperiam libero quas. Ducimus voluptatum nemo officia, in ea consequuntur esse impedit libero voluptatem dolorum. lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum voluptatum ipsa! Reprehenderit amet voluptatibus sapiente placeat veniam voluptates incidunt, magni quasi aut dolorum nihil quae atque recusandae, dicta odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, beatae dicta! Impedit repellendus laborum nulla, minus, ex voluptas iste recusandae dolore deserunt unde mollitia reiciendis magni itaque? Ullam, similique maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequuntur praesentium sit porro? Facere totam aperiam libero quas. Ducimus voluptatum nemo officia, in ea consequuntur esse impedit libero voluptatem dolorum. lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum voluptatum ipsa! Reprehenderit amet voluptatibus sapiente placeat veniam voluptates incidunt, magni quasi aut dolorum nihil quae atque recusandae, dicta odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, beatae dicta! Impedit repellendus laborum nulla, minus, ex voluptas iste recusandae dolore deserunt unde mollitia reiciendis magni itaque? Ullam, similique maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequuntur praesentium sit porro? Facere totam aperiam libero quas. Ducimus voluptatum nemo officia, in ea consequuntur esse impedit libero voluptatem dolorum. lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum voluptatum ipsa! Reprehenderit amet voluptatibus sapiente placeat veniam voluptates incidunt, magni quasi aut dolorum nihil quae atque recusandae, dicta odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, beatae dicta! Impedit repellendus laborum nulla, minus, ex voluptas iste recusandae dolore deserunt unde mollitia reiciendis magni itaque? Ullam, similique maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequuntur praesentium sit porro? Facere totam aperiam libero quas. Ducimus voluptatum nemo officia, in ea consequuntur esse impedit libero voluptatem dolorum. lorem</p>
+    
 </body>
 </html>
