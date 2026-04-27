@@ -3,22 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formula</title>
+    <title>Formulário</title>
+    <!-- Elementos number, month, date e time em formulários -->
 </head>
 <body>
-    <form action="cadastro.html" method="post">
-        <div>
-            <p><label for="inome">Nome:</label> 
-                <input type="text" name="nome" id="inome">
-            </p>
-            <p>
-                <label for="icidade">Cidade:</label>
-                <input type="text" name="cidade" id="icidade">
-            </p>
-            <p>
-                <input type="submit" value="Enviar">
-            </p>
-        </div>
+    <h1>Teste de formulários</h1>
+    <form action="cadastro.html" method="get" autocomplete="on">
+        <p>
+            <!-- input:text-->
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required maxlength="15" placeholder="Digite seu nome" autocomplete="name">
+        </p>
+        <p>
+            <!-- input:number -->
+            <label for="imedia">Média: </label>
+            <input type="number" name="media" id="imedia" value="5" max="10" step="0.1">
+        </p>
+        <p>
+            <!-- input:date  / calendário normal -->
+            <!-- input:month / calendário de mês -->
+            <label for="ical">Calendário</label>
+            <input type="date" name="cal" id="ical" value="2026-04-11">
+        </p>
+        <p>
+            <!-- input:time / Hor -->
+            <label for="ihora">Horário</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <!-- input:submit / Enviar -->
+            <!-- input:reset / Limpar -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
