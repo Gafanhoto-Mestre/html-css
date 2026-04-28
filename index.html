@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Teste de formulários</h1>
-    <form method="get" autocomplete="on">
+    <form action="cadastro.html" method="get" autocomplete="on">
         <p>
             <!-- input:text-->
             <label for="inome">Nome: </label>
@@ -35,6 +35,20 @@
             <!-- input:reset / Limpar -->
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
+        </p>
+        <p>
+            <label for="icpf">CPF</label>
+            <input 
+                type="text" 
+                name="cpf" 
+                id="icpf" 
+                placeholder="000.000.000-00"
+                inputmode="numeric" 
+                maxlength="14"
+                pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+                title="Digite o CPF no formato 000.000.000-00"
+                required
+>
         </p>
     </form>
 </body>
