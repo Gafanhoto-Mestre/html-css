@@ -1,2 +1,48 @@
-Os dados foram enviados!<br>
-Aprenda PHP para saber o que fazer com eles!
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Recebidos</title>
+</head>
+<body>
+    <h1>Dados Recebidos via JavaScript</h1>
+    
+    <div id="resultado">
+        <p>Carregando dados...</p>
+    </div>
+
+    <script>
+        // 1. Pega os parâmetros da URL
+        const parametros = new URLSearchParams(window.location.search);
+        const divResultado = document.getElementById('resultado');
+        
+        let conteudo = "";
+
+        // 2. Lê o campo "sexo"
+        const sexo = parametros.get('sexo');
+        if (sexo) {
+            conteudo += `<p><strong>Sexo selecionado:</strong> ${sexo}</p>`;
+        }
+
+        // 3. Lê os esportes (Como são vários, verificamos cada um)
+        let esportes = [];
+        if (parametros.has('esbas')) esportes.push("Basquete");
+        if (parametros.has('esfut')) esportes.push("Futebol");
+        if (parametros.has('esnat')) esportes.push("Natação");
+        if (parametros.has('esten')) esportes.push("Tênis");
+
+        if (esportes.length > 0) {
+            conteudo += `<p><strong>Esportes favoritos:</strong> ${esportes.join(', ')}</p>`;
+        } else {
+            conteudo += `<p><strong>Esportes favoritos:</strong> Nenhum selecionado.</p>`;
+        }
+
+        // 4. Exibe na tela
+        divResultado.innerHTML = conteudo;
+    </script>
+
+    <br>
+    <a href="form005_video24.html">Voltar ao formulário</a>
+</body>
+</html>
