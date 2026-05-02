@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Output</title>
+</head>
+<body>
+    <!-- Tag Output -->
+     <h2>Exemplo de Formulário</h2>
+    <form action="cadastro.html" method="get" autocomplete="on">
+        <!-- <p>
+            <label for="inum1">Numero 1: </label>
+            <input type="number" name="num1" id="inum1" required oninput="isaida.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="inum2">Numero 2: </label>
+            <input type="number" name="num2" id="inum2" required oninput="isaida.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="isaida">Soma: </label>
+            <output id="isaida"></output>
+        </p> -->
+
+        <label for="inum">Número: </label>
+        <input type="range" name="num" id="inum" oninput="isaida.innerHTML = Number(inum.value)">
+        <output id="isaida"></output>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
